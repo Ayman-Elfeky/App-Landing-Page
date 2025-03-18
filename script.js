@@ -8,6 +8,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 
+
+  const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    navLinks.childNodes.forEach(ele => {
+      ele.addEventListener('click', ()=> {
+        navLinks.classList.remove('active');
+      })
+    })
+});
+
+
   document.addEventListener('contextmenu', (e)=> {
     e.preventDefault()
     alert("Inspecting is disabled! until confirm in Mostaql");
@@ -43,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const observerOptions = {
       root: null, // Use the viewport as the root
-      threshold: 0.6, // Trigger when 10% of the element is in view
+      threshold: 0.1, // Trigger when 10% of the element is in view
   };
 
   const observer = new IntersectionObserver((entries) => {

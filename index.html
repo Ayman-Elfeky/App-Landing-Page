@@ -6,22 +6,28 @@
 	<title>عدسة احترافية - منصة المصورين</title>
     <link rel="shortcut icon" href="./assets/lens.png" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <a href="#home">
-                <img src="./assets/lens.png" alt="Logo image">
-            </a>
-            <ul>
-                <li><a href="#register">قم بتنزيله الأن!</a></li>
-                <li><a href="#how">كيف يعمل؟</a></li>
-                <li><a href="#why">خدماتنا</a></li>
-            </ul>
-        </nav>
-    </header>
+	<header>
+		<nav>
+			<a href="#home">
+				<img src="./assets/lens.png" alt="Logo image">
+			</a>
+			<ul class="nav-links">
+				<li><a href="#register">قم بتنزيله الأن!</a></li>
+				<li><a href="#how">كيف يعمل؟</a></li>
+				<li><a href="#why">خدماتنا</a></li>
+			</ul>
+			<div class="menu-toggle">
+				<i class="fas fa-bars"></i>
+			</div>
+		</nav>
+	</header>
+	
 
 	<main id="home" class="landing">
         <div class="container">
@@ -32,35 +38,49 @@
                 <a href="#" class="cta-button">سجّل الآن</a>
             </div>
             <div class="right-con">
-                <img src="./assets/department.png" alt="">
+                <img class="phone" src="./assets/department.png" alt="">
             </div>
         </div>
+		<div class="wave" style="height: 150px; overflow: hidden;">
+			<svg viewBox="0 0 500 150" preserveAspectRatio="none">
+				<path d="M0.00,49.98 C150.00,150.00 350.00,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #AF7355;"></path>
+			</svg>
+		</div>
 	</main>
 
-	<div id="why" class=" section section1 animte-on-scroll">
+	<div id="why" class="section section1 animate-on-scroll">
 		<h2>لماذا تنضم إلى عدسة احترافية؟</h2>
-		<div class="features animate-on-scroll">
-			<div class="feature">
-				<img src="https://maramsoftwares.com/API/pic/department.png" alt="فرص جديدة">
+		<div class="features-container">
+
+			<div class="feature-point feature-top">
 				<h3>فرص جديدة</h3>
 				<p>اكتشف عملاء جدد يبحثون عن خدماتك.</p>
 			</div>
-			<div class="feature">
-				<img src="https://maramsoftwares.com/API/pic/setting.png" alt="تحكم كامل">
+
+			
+		</div>
+		<div class="f-cont">
+			<div class="feature-point feature-left">
 				<h3>تحكم كامل</h3>
 				<p>حدد أسعارك وأوقات عملك بحرية تامة.</p>
 			</div>
-			<div class="feature">
-				<img src="https://maramsoftwares.com/API/pic/homePage.png" alt="نظام حجوزات ذكي">
-				<h3>نظام حجوزات ذكي</h3>
-				<p>احصل على إشعارات بالحجوزات وأدر مواعيدك بسهولة.</p>
+			<div class="main-feature">
+				<img class="phone" src="https://maramsoftwares.com/API/pic/department.png" alt="عدسة احترافية">
 			</div>
+				<div class="feature-point feature-right">
+					<h3>نظام حجوزات ذكي</h3>
+					<p>احصل على إشعارات بالحجوزات وأدر مواعيدك بسهولة.</p>
+				</div>
+		</div>
 		</div>
 	</div>
-
-	<div id="how" class="section section2 animate-on-scroll">
-		<h2>كيف يعمل التطبيق؟</h2>
+	
+	<div id="how" class="section section2 animate-on-scroll flex-container">
+		<div class="image-container">
+			<img src="./assets/setting.png" alt="App Preview" class=" phone image-shadow">
+		</div>
 		<div class="steps">
+			<h2>كيف يعمل التطبيق؟</h2>
 			<div class="step">
 				<h3>1. أنشئ حسابك</h3>
 				<p>سجل بياناتك وأضف معرض أعمالك بسهولة.</p>
@@ -75,6 +95,7 @@
 			</div>
 		</div>
 	</div>
+	
 
 	<div id="register" class="section section3 animate-on-scroll">
 		<h2>ابدأ الآن واستمتع بالمزيد من الفرص!</h2>
