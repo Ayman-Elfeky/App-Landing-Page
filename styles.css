@@ -2,7 +2,7 @@
     --back: #f0e2d7;
 }
 
-body::before {
+/* body::before {
     content: "DEMO VERSION";
     position: fixed;
     top: 50%;
@@ -14,7 +14,7 @@ body::before {
     pointer-events: none;
     white-space: nowrap;
     user-select: none;
-}
+} */
 
 ::-webkit-scrollbar {
     background-color: var(--back);
