@@ -29,7 +29,7 @@ menuToggle.addEventListener('click', () => {
 
   document.addEventListener('keydown', (e)=> {
     console.log(e)
-    if(e.ctrlKey && (e.key === 'u' || e.key === 'i' || e.key === 's' || e.key === 'a')) {
+    if(e.ctrlKey && (e.key === 'u' || e.key === 'ع' || e.key === 'i' || e.key === 's' || e.key === 'a')) {
       e.preventDefault();
       alert("Inspecting is disabled! until confirm in Mostaql");
     }
@@ -38,7 +38,7 @@ menuToggle.addEventListener('click', () => {
 
   document.addEventListener("keydown", function (e) {
     // Detect Ctrl + Shift + I
-    if (e.ctrlKey && e.shiftKey && e.key === "I") {
+    if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "÷")) {
       e.preventDefault();
       alert("Inspecting is disabled! until confirm the in Mostaql");
     }
