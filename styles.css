@@ -80,6 +80,23 @@ img {
     animation: slideUp 1s ease forwards;
 }
 
+/* .right-con::before { */
+    body::before {
+        content: "DEMO VERSION";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+        font-size: 5rem;
+        color: rgba(0, 0, 0, 0.1);
+        z-index: 9999;
+        pointer-events: none;
+        white-space: nowrap;
+        user-select: none;
+    }
+    
+/* } */
+
 .right-con img {
     height: 100%;
     border: 2px solid black;
